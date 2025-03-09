@@ -26,20 +26,6 @@ const education = [
   },
 ];
 
-const certifications = [
-  {
-    title: "Certified Frontend Developer",
-    issuer: "Google",
-    year: "2022",
-    description: "Achieved a certification in frontend development, covering React, Next.js, and UI/UX best practices.",
-  },
-  {
-    title: "Advanced UX Design",
-    issuer: "Coursera",
-    year: "2023",
-    description: "Completed an intensive UX/UI design course, focusing on user research, wireframing, and prototyping.",
-  },
-];
 
 const sections = [
   {
@@ -69,36 +55,6 @@ const sections = [
                 {edu.institution} • {edu.year}
               </p>
               <p className="mt-2 text-muted-foreground">{edu.description}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    ),
-  },
-  {
-    title: "Certifications",
-    content: (
-      <div className="max-w-6xl">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mb-12 text-3xl font-bold md:text-4xl"
-        >
-          Certifications
-        </motion.h2>
-        <div className="space-y-8">
-          {certifications.map((cert, index) => (
-            <motion.div
-              key={cert.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="rounded-xl bg-muted p-8"
-            >
-              <h3 className="mb-4 text-2xl font-semibold">{cert.title}</h3>
-              <p className="text-muted-foreground">{cert.issuer} • {cert.year}</p>
-              <p className="mt-2 text-muted-foreground">{cert.description}</p>
             </motion.div>
           ))}
         </div>

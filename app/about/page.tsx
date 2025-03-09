@@ -71,31 +71,6 @@ const sections = [
       </div>
     ),
   },
-  {
-    title: "Experience",
-    content: (
-      <div className="max-w-6xl">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="rounded-xl bg-muted p-8"
-        >
-          <h3 className="mb-6 text-2xl font-semibold">Work History</h3>
-          <div className="space-y-8">
-            <div>
-              <h4 className="text-xl font-medium">Senior UI/UX Designer</h4>
-              <p className="text-muted-foreground">TechCorp • 2020 - Present</p>
-            </div>
-            <div>
-              <h4 className="text-xl font-medium">UI Designer</h4>
-              <p className="text-muted-foreground">DesignStudio • 2018 - 2020</p>
-            </div>
-          </div>
-        </motion.div>
-      </div>
-    ),
-  },
 ];
 
 export default function AboutPage() {
